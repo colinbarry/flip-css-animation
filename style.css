@@ -1,0 +1,42 @@
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  display: flex;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  gap: 5px;
+  margin: auto;
+  position: relative;
+}
+
+.cell {
+  background: coral;
+  height: 80px;
+  width: 80px;
+  opacity: 0.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cell--ghost {
+  height: 50px;
+  width: 50px;
+}
+
+.cell.cell--clicked {
+  position: absolute;
+  opacity: 1;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
