@@ -8,6 +8,7 @@ for (let i = 0; i < 16; ++i) {
   const cell = document.createElement('div');
   cell.className = "cell";
   grid.appendChild(cell);
+  cell.style.background = `hsl(${i * 22}deg, 50%, 50%)`;
 
   const clickHandler = () => {
     cell.removeEventListener('click', clickHandler);
